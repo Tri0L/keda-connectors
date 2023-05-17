@@ -1,4 +1,4 @@
-module github.com/fission/keda-connectors/common
+module github.com/Tri0L/keda-connectors/common
 
 go 1.18
 
