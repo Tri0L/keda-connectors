@@ -71,6 +71,7 @@ func HandleHTTPRequest(message string, headers http.Header, data ConnectorMetada
 
 		// Make the request
 		resp, err = http.DefaultClient.Do(req)
+		logger.Info(fmt.Sprintf("### resp.StatusCode: %s", resp.StatusCode))		
 		if err != nil {
 			logger.Error("sending function invocation request failed",
 				zap.Error(err),
